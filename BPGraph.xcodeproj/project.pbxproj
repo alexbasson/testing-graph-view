@@ -21,7 +21,10 @@
 		FA9C1128192835730064F086 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA9C10F1192833C70064F086 /* UIKit.framework */; };
 		FA9C1129192835730064F086 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA9C10ED192833C70064F086 /* Foundation.framework */; };
 		FA9C112F192835730064F086 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA9C112D192835730064F086 /* InfoPlist.strings */; };
-		FA9C1131192835730064F086 /* ExampleSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = FA9C1130192835730064F086 /* ExampleSpec.mm */; };
+		FA9C113A192839770064F086 /* AppDelegateSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = FA9C1139192839770064F086 /* AppDelegateSpec.mm */; };
+		FA9C113C19283A7A0064F086 /* BPGraphViewControllerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = FA9C113B19283A7A0064F086 /* BPGraphViewControllerSpec.mm */; };
+		FA9C113F19283ACC0064F086 /* BPGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9C113E19283ACC0064F086 /* BPGraphView.m */; };
+		FA9C114419283BD80064F086 /* BPGraphViewSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = FA9C114319283BD80064F086 /* BPGraphViewSpec.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,9 +48,13 @@
 		FA9C1125192835730064F086 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		FA9C112C192835730064F086 /* Specs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Specs-Info.plist"; sourceTree = "<group>"; };
 		FA9C112E192835730064F086 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		FA9C1130192835730064F086 /* ExampleSpec.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ExampleSpec.mm; sourceTree = "<group>"; };
 		FA9C1132192835730064F086 /* Rakefile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rakefile; sourceTree = "<group>"; };
 		FA9C1135192835730064F086 /* Specs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Specs-Prefix.pch"; sourceTree = "<group>"; };
+		FA9C1139192839770064F086 /* AppDelegateSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegateSpec.mm; sourceTree = "<group>"; };
+		FA9C113B19283A7A0064F086 /* BPGraphViewControllerSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BPGraphViewControllerSpec.mm; sourceTree = "<group>"; };
+		FA9C113D19283ACC0064F086 /* BPGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPGraphView.h; sourceTree = "<group>"; };
+		FA9C113E19283ACC0064F086 /* BPGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPGraphView.m; sourceTree = "<group>"; };
+		FA9C114319283BD80064F086 /* BPGraphViewSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BPGraphViewSpec.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +125,8 @@
 				FA9C111D192833F10064F086 /* BPGraphViewController.m */,
 				FA9C10FF192833C70064F086 /* Images.xcassets */,
 				FA9C10F4192833C70064F086 /* Supporting Files */,
+				FA9C113D19283ACC0064F086 /* BPGraphView.h */,
+				FA9C113E19283ACC0064F086 /* BPGraphView.m */,
 			);
 			path = BPGraph;
 			sourceTree = "<group>";
@@ -136,7 +145,9 @@
 		FA9C112A192835730064F086 /* Specs */ = {
 			isa = PBXGroup;
 			children = (
-				FA9C1130192835730064F086 /* ExampleSpec.mm */,
+				FA9C1139192839770064F086 /* AppDelegateSpec.mm */,
+				FA9C113B19283A7A0064F086 /* BPGraphViewControllerSpec.mm */,
+				FA9C114319283BD80064F086 /* BPGraphViewSpec.mm */,
 				FA9C1132192835730064F086 /* Rakefile */,
 				FA9C112B192835730064F086 /* Supporting Files */,
 			);
@@ -294,6 +305,7 @@
 				FA9C111E192833F10064F086 /* BPGraphViewController.m in Sources */,
 				FA9C10FE192833C70064F086 /* AppDelegate.m in Sources */,
 				FA9C10FA192833C70064F086 /* main.m in Sources */,
+				FA9C113F19283ACC0064F086 /* BPGraphView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,7 +313,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA9C1131192835730064F086 /* ExampleSpec.mm in Sources */,
+				FA9C114419283BD80064F086 /* BPGraphViewSpec.mm in Sources */,
+				FA9C113C19283A7A0064F086 /* BPGraphViewControllerSpec.mm in Sources */,
+				FA9C113A192839770064F086 /* AppDelegateSpec.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
