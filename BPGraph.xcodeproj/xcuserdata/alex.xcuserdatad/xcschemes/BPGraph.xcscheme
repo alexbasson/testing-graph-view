@@ -32,9 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FA9C1104192833C80064F086"
-               BuildableName = "BPGraphTests.xctest"
-               BlueprintName = "BPGraphTests"
+               BlueprintIdentifier = "FA9C1123192835730064F086"
+               BuildableName = "Specs.octest"
+               BlueprintName = "Specs"
                ReferencedContainer = "container:BPGraph.xcodeproj">
             </BuildableReference>
          </TestableReference>
